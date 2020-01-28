@@ -19,7 +19,7 @@ import (
 	log "github.com/sirupsen/logrus"
 )
 
-const BufferSize = 4 * 104857600 // 4MiB
+const BufferSize = 50 * 1048576 // 50MiB
 
 func Upload(sourceUrl string, storageDomainId string) error {
 	rand.Seed(time.Now().Unix())
